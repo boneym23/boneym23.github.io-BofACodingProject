@@ -33,7 +33,7 @@ let showGroceryList = function(){
 
 //Fetching the local .json file
 
-fetch("./groceries.json", {
+fetch(`./groceries.json`, {
       headers : { 
         'Content-Type': 'application/json',
         'Accept': 'application/json'
