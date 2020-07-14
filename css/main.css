@@ -1,0 +1,88 @@
+body, html {
+  height: 100%;
+  font-family: Arial;
+}
+
+h1, h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2C3A47;
+}
+
+body * {
+  line-height: 150%;
+}
+
+.groceryList {
+  display: -ms-grid;
+  display: grid;
+  gap: 50px;
+}
+
+.groceryList .wrapper {
+  background-color: #FFF4D5;
+  border-right: 5px solid #E17055;
+  border-bottom: 5px solid #E17055;
+}
+
+.groceryList .wrapper .card {
+  margin: 0 4%;
+}
+
+.groceryList .wrapper p {
+  font-size: 12px;
+  color: #2C3A47;
+  font-weight: bold;
+  height: 2vw;
+  margin-top: 3%;
+}
+
+.groceryList .wrapper h2.quantity {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.groceryList .wrapper h3.line {
+  margin-bottom: 0;
+  border-bottom: 4px solid #ddd;
+}
+
+.groceryList .wrapper h4.category {
+  margin: 10% 0 0 0;
+}
+
+.groceryList .wrapper .accent {
+  font-size: 16px;
+  color: #E17055;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  html {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .groceryList {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024) {
+  html {
+    padding: 0 15px;
+  }
+  .item {
+    margin-bottom: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  html {
+    max-width: 980px;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
